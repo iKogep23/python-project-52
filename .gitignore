@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Виртуальное окружение
+.venv/
+venv/
+env/
+
+# Django
+*.log
+db.sqlite3
+db.sqlite3-journal
+/staticfiles/
+/media/
+
+# Переменные окружения и секреты
+.env
+.env.*
+!.env.example
+
+# IDE / редакторы
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,38 @@
+[project]
+name = "python-project-52"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Igor Bessonov", email = "ikogep23@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "dj-database-url>=3.1.2",
+    "django>=6.1.3",
+    "django-filter>=26.2",
+    "django-tailwind-cli>=4.8.2",
+    "gunicorn>=27.0.0",
+    "psycopg2-binary>=2.9.13",
+    "python-dotenv>=1.2.4",
+    "sentry-sdk>=2.74.0",
+    "whitenoise[brotli]>=6.12.0",
+]
+
+[project.scripts]
+python-project-52 = "python_project_52:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.17.4",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"*/migrations/*" = ["E501"]
+"*/models.py" = ["F401"]
+"*/admin.py" = ["F401"]
+"*/tests.py" = ["F401"]
