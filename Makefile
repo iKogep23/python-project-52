@@ -9,6 +9,9 @@ collectstatic:
 migrate:
 	uv run python manage.py migrate
 
+build-css:
+	uv run python manage.py tailwind build
+
 build:
 	./build.sh
 

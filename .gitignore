@@ -20,6 +20,8 @@ db.sqlite3
 db.sqlite3-journal
 /staticfiles/
 /media/
+.django_tailwind_cli/
+assets/css/tailwind.css
 
 # Переменные окружения и секреты
 .env
